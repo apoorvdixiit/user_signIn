@@ -18,7 +18,7 @@ function App() {
 
         if (token) {
           // Verify token validity
-          axios.get(`http://localhost:3000/api/v1/users/verify-token?token=${token}`)
+          axios.get(`http://139.59.79.87/api/v1/users/verify-token?token=${token}`)
               .then(response => {
                   setIsLoggedIn(true);
                   console.log(response);
@@ -38,7 +38,7 @@ function App() {
     const handleLogin = () => {
         // Redirect the user to the backend endpoint for Google OAuth login
         
-        window.location.href = 'http://localhost:3000/api/v1/users/auth-google';
+        window.location.href = 'http://139.59.79.87/api/v1/users/auth-google';
     };
 
     return (
